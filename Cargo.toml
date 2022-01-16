@@ -1,0 +1,23 @@
+[package]
+name = "gear"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "map_parallel"
+path = "src/lib.rs"
+
+[[test]]
+name = "map_parallel_test"
+path = "src/test.rs"
+
+[[bench]]
+name = "map_parallel_bench"
+path = "src/bench.rs"
+
+[dependencies]
+crossbeam = "0.8"
+num_cpus = "1.0"
+
+[dev-dependencies]
+rayon = "1.5"
